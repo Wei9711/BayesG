@@ -41,6 +41,10 @@ BayesG related config:
 * ATSC Monaco: config/config_BayesG_monaco.ini
 * NewYorkXX: config/config_BayesG_newyorkXX.ini
 
+For example:
+~~~
+python3 main.py --base-dir /BayesG train --config-dir /Bayes/config/config_BayesG_newyork51.ini
+~~~
 
 2. To access tensorboard during training, run
 ~~~
