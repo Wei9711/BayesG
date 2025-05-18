@@ -55,6 +55,10 @@ Evaluation data will be output to `[base_dir]/eva_data`. Make sure evaluation se
 
 4. To visualize the agent behavior in ATSC scenarios, run
 ~~~
-python3 main.py --base-dir [base_dir] evaluate --evaluation-seeds [seed] --demo
+python3 main.py --base-dir [base_dir] evaluate --checkpoint [saved_model_path] --demo
+~~~
+Such as:
+~~~
+python main.py --base-dir /BayesG evaluate --checkpoint /BayesG/model/xxxxxcheckpoint.pt --demo
 ~~~
 It is recommended to use only one evaluation seed for the demo run. This will launch the SUMO GUI, and [`view.xml`](./envs/large_grid_data) can be applied to visualize queue length and intersectin delay in edge color and thickness. 
