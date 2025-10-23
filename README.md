@@ -66,3 +66,15 @@ Such as:
 python main.py --base-dir /BayesG evaluate --checkpoint /BayesG/model/xxxxxcheckpoint.pt --demo
 ~~~
 It is recommended to use only one evaluation seed for the demo run. This will launch the SUMO GUI, and [`view.xml`](./envs/large_grid_data) can be applied to visualize queue length and intersectin delay in edge color and thickness. 
+
+## Citation
+If you find this work useful, please cite our paper:
+~~~
+@inproceedings{duan2025bayesian,
+  title={Bayesian Ego-graph Inference for Networked Multi-Agent Reinforcement Learning},
+  author={Duan, Wei and Lu, Jie and Xuan, Junyu},
+  booktitle={Proceedings of the Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS 2025)},
+  year={2025},
+  url={https://openreview.net/forum?id=3qeTs05bRL}
+}
+~~~
