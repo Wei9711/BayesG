@@ -1,8 +1,20 @@
+<!-- Enable math rendering -->
+
 # BayesG Networked Multi-agent RL 
 This repo implements the state-of-the-art MARL algorithms for networked system control, with observability and communication of each agent limited to its neighborhood. 
 
 Our BayesG:
 * BayesG: a decentralized actor–critic framework that jointly learns context-aware interaction graphs and policies via variational Bayesian inference over ego-graphs in large-scale networked MARL.
+
+
+<figure>
+  <img src="https://github.com/Wei9711/BayesG/blob/main/BayesG.jpg" alt="BayesG Framework">
+  <figcaption> (a) In CTDE, the global state is available for learning both the centralized critic and the interaction graph. (b) Overview of BayesG. In networked MARL, each agent's state and action are influenced by its neighbors, forming local data $D_i = \{s_{\mathcal{V}_i}, u_i, u_{\mathcal{N}_i}\}$. We formulate latent graph learning as *Bayesian variational inference*, where each agent infers a binary mask $Z_i$ over its neighborhood from the environment graph $G^{\text{env}}_{\mathcal{V}_i}$ and local data $D_i$. The posterior $p(Z_i \mid G^{\text{env}}_{\mathcal{V}_i}, D_i)$ is approximated by a variational distribution $q(Z_i; \phi_i)$, from which a sparse subgraph is sampled and used for graph-conditioned policy learning via an ELBO objective.
+  </figcaption>
+</figure>
+
+
+## Experimental Setup
 
 For fair comparison, all algorithms are applied to A2C agents, classified into two groups: IA2C contains non-communicative policies which utilize neighborhood information only, whereas MA2C contains communicative policies with certain communication protocols.
 
