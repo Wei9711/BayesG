@@ -26,7 +26,7 @@ Available IA2C algorithms:
 
 Available MA2C algorithms:
 * CommNet: [Sukhbaatar, Sainbayar, et al. "Learning multiagent communication with backpropagation." Advances in Neural Information Processing Systems, 2016.](https://arxiv.org/pdf/1605.07736.pdf)
-* NeurComm: [Chu, T., S. Chinchali, S. Katti."Multi-agent reinforcement learning for networked system control." ICLR 2020](https://papers.nips.cc/paper_files/paper/2022/hash/61d8577984e4ef0cba20966eb3ef2ed8-Abstract-Conference.html)
+* NeurComm: [Chu, T., S. Chinchali, S. Katti."Multi-agent reinforcement learning for networked system control." ICLR 2020](https://arxiv.org/abs/2004.01339)
 
 
 Available NMARL scenarios:
@@ -78,6 +78,9 @@ Such as:
 python main.py --base-dir /BayesG evaluate --checkpoint /BayesG/model/xxxxxcheckpoint.pt --demo
 ~~~
 It is recommended to use only one evaluation seed for the demo run. This will launch the SUMO GUI, and [`view.xml`](./envs/large_grid_data) can be applied to visualize queue length and intersectin delay in edge color and thickness. 
+
+## Acknowledgments
+This project is built upon the codebase from [deeprl_network](https://github.com/cts198859/deeprl_network). We thank the authors for their excellent work and for making their code publicly available.
 
 ## Citation
 If you find this work useful, please cite our paper:
